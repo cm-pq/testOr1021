@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script src="../../../../../hab/nn/angular.min.js"></script>
+    <!--定义控制器-->
+    <script>
+        /*定义模块*/
+        var app = angular.module("qw", []);
+        //定义控制器
+        app.controller("myfirst", function ($scope) {
+
+            $scope.add = function () {
+                $scope.aa = 50032;
+
+            }
+        })
+        app.controller("my", function ($scope) {
+
+            $scope.cc = function () {
+                $scope.bb = 33333;
+            }
+
+
+        })
+
+
+    </script>
+</head>
+
+<body ng-app="qw">
+<div ng-init="aa=1;bb=2">
+    <div ng-controller="myfirst">
+        <button ng-click="add()">点击</button>
+    </div>
+    <div ng-controller="my">
+        <input type="text" ng-model="bb">
+        <button ng-click="cc()">点击</button>
+    </div>
+</div>
+</body>
+</html>

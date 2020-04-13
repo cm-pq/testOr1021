@@ -1,0 +1,1 @@
+var app = angular.module("youlexuan", ["pagination"]);//自定义模块,[]为引入模块js文件里可看到
